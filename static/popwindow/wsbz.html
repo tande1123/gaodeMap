@@ -1,0 +1,131 @@
+<div v-if="ADDRESSTYPE==='G01' || ADDRESSTYPE==='G02'" class="ylzx">
+  <div class="ylzx_box">
+    <div>
+      <p class="ylzx_title">
+        <span>{{NAME}}</span>
+        <span></span>
+      </p>
+    </div>
+    <div class="dz">
+      <span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
+      <span>{{ADDRESS}}</span>
+    </div>
+    <div class="rydh">
+      <div>
+        <span>联&nbsp;&nbsp;络&nbsp;&nbsp;员:</span>
+        <span>吴小语</span>
+      </div>
+      <div>
+        <span>联系电话:</span>
+        <span>13971414917</span>
+      </div>
+      <i @click="tipclickcommand({id:'VEDIOCALL',point:displayData})"></i>
+    </div>
+    <!-- <div><span>时间：</span>{{PERIOD}}</div> -->
+    <div class="ylzx_xq">
+      <div>
+        <span>医疗保障人数:</span>
+        <span>50</span>
+      </div>
+      <div>
+        <span>医&nbsp;&nbsp;疗&nbsp;&nbsp;组：</span>
+        <span>{{ensurePlanGroup.length}}</span>
+      </div>
+      <div>
+        <span>急&nbsp;&nbsp;救&nbsp;&nbsp;车：</span>
+        <span>{{ensurePlanAmbulance.length}}</span>
+      </div>
+    </div>
+    <div class="ylzx_table">
+      <a @click="tipclickcommand({id:'YILIAOZU',point:displayData}),innerMethod('tableIndex',1)"
+        :class="tableIndex===1?'active':''">医疗组</a>&nbsp;
+      <a @click="tipclickcommand({id:'JIUHUCHE',point:displayData},innerMethod('tableIndex',2))"
+        :class="tableIndex===2?'active':''">急救车</a>&nbsp;
+      <a @click="tipclickcommand({id:'ROUTE',point:displayData},innerMethod('tableIndex',3))"
+        :class="tableIndex===3?'active':''">转运医院</a>&nbsp;
+      <a @click="tipclickcommand({id:'OTHERS',point:displayData},innerMethod('tableIndex',4))"
+        :class="tableIndex===4?'active':''">周边视频</a>
+    </div>
+  </div>
+</div>
+<div v-if="ADDRESSTYPE==='G04' || ADDRESSTYPE==='G05'" class="hkbox">
+  <div class="hkbox_box">
+    <div>
+      <p class="hkbox_title">
+        <span>{{NAME}}</span>
+        <span></span>
+      </p>
+    </div>
+    <div>
+      <span>地&nbsp;&nbsp;址:</span>
+      <span>{{ADDRESS}}</span>
+    </div>
+    <div>
+      <span>联&nbsp;&nbsp;络&nbsp;&nbsp;员:</span>
+      <span>张力</span>
+    </div>
+    <div>
+      <span>保障人数:</span>
+      <span>3</span>
+    </div>
+    <div>
+      <span>联系电话:</span>
+      <span>13999276878</span>
+      <!-- <i @click="tipclickcommand({id:'VEDIOCALL',point:displayData})"></i> -->
+    </div>
+  </div>
+</div>
+<div v-if="ADDRESSTYPE==='G06'" class="hkbox">
+  <div class="hkbox_box">
+    <div>
+      <p class="hkbox_title">
+        <span>{{NAME}}</span>
+        <span></span>
+      </p>
+    </div>
+    <div>
+      <span>地&nbsp;&nbsp;址:</span>
+      <span>{{ADDRESS}}</span>
+    </div>
+    <div>
+      <span>联&nbsp;&nbsp;络&nbsp;&nbsp;员:</span>
+      <span>张力</span>
+    </div>
+    <div>
+      <span>保障人数:</span>
+      <span>3</span>
+    </div>
+    <div>
+      <span>联系电话:</span>
+      <span>13999276878</span>
+      <!-- <i @click="tipclickcommand({id:'VEDIOCALL',point:displayData})"></i> -->
+    </div>
+  </div>
+</div>
+<div v-if="ADDRESSTYPE==='G07'" class="hkbox">
+  <div class="hkbox_box">
+    <div>
+      <p class="hkbox_title">
+        <span>{{NAME}}</span>
+        <span></span>
+      </p>
+    </div>
+    <div>
+      <span>地&nbsp;&nbsp;址:</span>
+      <span>{{ADDRESS}}</span>
+    </div>
+    <div>
+      <span>联&nbsp;&nbsp;络&nbsp;&nbsp;员:</span>
+      <span>{{RESPPER}}</span>
+    </div>
+    <div>
+      <span>保障人数:</span>
+      <span>0</span>
+    </div>
+    <div>
+      <span>联系电话:</span>
+      <span>{{RESPOTEL.split('|')[0]}}</span>
+      <i @click="tipclickcommand({id:'VEDIOCALL',point:displayData})"></i>
+    </div>
+  </div>
+</div>

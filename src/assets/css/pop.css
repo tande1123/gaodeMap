@@ -1,0 +1,90 @@
+.content-window-card {
+  position: relative;
+  box-shadow: none;
+  bottom: 0;
+  left: 0;
+  /* width: 300px; */
+  padding: 0;
+}
+
+.content-window-card p {
+  height: 2rem;
+}
+
+.content-window-card .custom-info {
+  border: solid 1px silver;
+}
+
+.content-window-card .info-top {
+  position: relative;
+  background: none repeat scroll 0 0 #F9F9F9;
+  /* border-bottom: 1px solid #CCC; */
+  border-radius: 5px 5px 0 0;
+}
+
+.content-window-card .info-top div {
+  display: inline-block;
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 31px;
+  padding: 0 10px;
+}
+
+.content-window-card .info-top i {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25%;
+  height: 41px;
+  transition-duration: 0.25s;
+  cursor: pointer;
+  /* background: url('../images/pop/close2.gif'); */
+  z-index: 5;
+}
+
+.content-window-card .info-top i:hover {
+  /* box-shadow: 0px 0px 5px #000; */
+}
+
+.content-window-card .info-middle {
+  /* font-size: 12px;
+  padding: 10px 6px; */
+  /* min-height: 100px; */
+}
+
+/* .content-window-card .info-bottom {
+  height: 0px;
+  width: 100%;
+  clear: both;
+  text-align: center;
+} */
+
+/* .content-window-card .info-bottom i {
+  display: inline-block;
+  width: 30px;
+  height: 23px;
+  position: relative;
+  background: url('../images/pop/sharp.png');
+  z-index: 104;
+} */
+
+.content-window-card span {
+  margin-left: 5px;
+  font-size: 11px;
+}
+/* .amap-marker-label{
+  position: absolute;
+    z-index: 2;
+    border: 1px solid #a3ccff;
+    white-space: nowrap;
+    cursor: default;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #22a7f0;
+    color: #fff;
+    border-radius: 12px;
+    padding: 6px;
+    margin-top: 3px;
+} */

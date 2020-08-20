@@ -1,0 +1,37 @@
+<div class="jycInfo">
+  <i class="jycInfo_x"></i>
+  <p class="jyc_title">
+    车辆信息
+  </p>
+  <i class="bar"></i>
+  <div class="xq">
+    <div>
+      <span>车牌号: </span>{{CARVIN}}</div>
+    <div>
+      <span>司机名称: </span>张武</div>
+    <div>
+      <span>联系电话: </span>13672925431</div>
+    <div class="peopleCount">
+      <span>转运医院: </span>{{TOHOSPITAL}}<i></i></div>
+    <!-- <div class="peopleCount">
+        <span>时间: </span>{{UPDATETIME}}<i></i></div> -->
+    <i class="sxt" @click="opensxt" v-show="CARSTATECODE!=2"></i>
+    <i class="dh" @click="openPhone"></i>
+  </div>
+  <div class="ry">
+    <p class="ry_title">
+      伤员信息
+    </p>
+    <i class="ry_bar"></i>
+    <div>
+      <span>姓名: </span>{{NAME}}</div>
+    <div>
+      <span>国籍: </span>{{NATIONALITY}}</div>
+    <div>
+      <span>病情: </span>{{DIAGNOSIS}}</div>
+    <i class="tubiao" @click="openry"></i>
+  </div>
+</div>
+</div>
+</div>
+</div>

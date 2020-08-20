@@ -1,0 +1,5 @@
+/* 引进特殊样式 */
+@font-face {
+  font-family: "Digiface";
+  src: url('./digifacewide.ttf');
+}

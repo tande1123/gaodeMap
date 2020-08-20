@@ -1,0 +1,59 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #072d45;
+  position: relative;
+}
+/* 编辑按钮 */
+.editbtn{
+  background-color: #0a7bc7;
+}
+.editbtn:hover{
+  background-color: #0083db;
+}
+.editbtn:active{
+  background-color: #006db6;
+}
+.editbtn.disable{
+  background-color: #2b86c3;
+}
+/* 添加按钮 */
+.addbtn{
+  background-color: #0ac787
+}
+.addbtn:hover{
+  background-color: #00dc91;
+}
+.addbtn:active{
+  background-color: #00b87a;
+}
+.addbtn.disable{
+  background-color: #29c590;
+}
+/* 删除按钮 */
+.deletebtn{
+  background-color: #f6541b;
+}
+.deletebtn:hover{
+  background-color: #ff622b;
+}
+.deletebtn:active{
+  background-color: #e34a14;
+}
+.deletebtn.disable{
+  background-color: #f36938;
+}
+/* 取消按钮 */
+.cancelbtn{
+  border:solid 1px #d8dde3;
+  background-color: #fff;
+}
+.cancelbtn:hover{
+  background-color: #f4f8fc;
+}
+.cancelbtn:active{
+  background-color: #d8dde3;
+}
+.cancelbtn.disable{
+  background-color: #eaecef;
+}
